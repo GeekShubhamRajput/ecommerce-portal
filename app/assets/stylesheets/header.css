@@ -1,0 +1,35 @@
+/* Sticky header with flex layout */
+header {
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  z-index: 1000;
+  padding: 15px 30px;
+  border-bottom: 1px solid #e0e0e0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+
+  display: flex;                /* 🔹 Flexbox layout */
+  justify-content: space-between; /* 🔹 Title left, nav right */
+  align-items: center;          /* 🔹 Vertically centered */
+}
+
+/* Header title */
+header h1 {
+  margin: 0;
+  font-size: 24px;
+  color: #2874F0;
+}
+
+/* Navigation links */
+header nav a {
+  color: #333;
+  text-decoration: none;
+  margin-left: 20px;   /* space between links */
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+/* Hover effect */
+header nav a:hover {
+  color: #2874F0; /* Flipkart blue */
+}
