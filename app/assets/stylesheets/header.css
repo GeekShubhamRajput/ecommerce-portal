@@ -20,21 +20,35 @@ header h1 {
   color: #2874F0;
 }
 
-/* Navigation links */
-header nav a {
-  color: #333;
-  text-decoration: none;
-  margin-left: 20px;   /* space between links */
-  font-weight: 500;
-  transition: color 0.3s ease;
-}
-
-/* Hover effect */
-header nav a:hover {
-  color: #2874F0; /* Flipkart blue */
-}
-
 h1 a {
   text-decoration: none;
   color: inherit; /* Optional: match the color of h1 */
+}
+
+/* Style links and buttons the same */
+header nav a,
+header nav button {
+  color: #333;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  background: none;
+  border: none;
+  font: inherit;
+  cursor: pointer;
+  padding: 0;
+  display: inline;
+}
+
+/* Hover effect for both */
+header nav a:hover,
+header nav button:hover {
+  color: #2874F0;
+}
+
+/* Keep Rails' button_to form inline */
+header nav form {
+  display: inline;
+  margin: 0;
 }

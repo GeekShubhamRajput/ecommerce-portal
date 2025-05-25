@@ -1,7 +1,11 @@
 <header>
   <h1><%= link_to "E-commerce Portal", root_path %></h1>
   <nav>
-    <%= link_to 'categories', categories_path %>
     <%= link_to 'Products', products_path %>
+    <% if authenticated? %>
+      <%= button_to "Sign Out", session_path, method: :delete  %>
+    <% else %>
+      <%= link_to "Sign In", new_session_path %>
+    <% end %>
   </nav>
 </header>
