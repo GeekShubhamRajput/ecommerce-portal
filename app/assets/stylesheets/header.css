@@ -33,3 +33,8 @@ header nav a {
 header nav a:hover {
   color: #2874F0; /* Flipkart blue */
 }
+
+h1 a {
+  text-decoration: none;
+  color: inherit; /* Optional: match the color of h1 */
+}
